@@ -13,7 +13,8 @@ initial begin
 end
 
 initial begin
-  #540
+//  #540
+  #1080
   reset = 1'b0;
 end
 
@@ -29,7 +30,7 @@ end
   
 
 reg[2:0] bx_in_MatchCalculator;
-initial bx_in_MatchCalculator = 3'b111;
+initial bx_in_MatchCalculator = 3'b110;
 always begin
   #540 bx_in_MatchCalculator <= bx_in_MatchCalculator + 1'b1;
 end
@@ -266,7 +267,7 @@ wire[7:0] allproj_nentries_6_V_din;
 reg allproj_nentries_7_V_we;
 wire[7:0] allproj_nentries_7_V_din;
 wire allproj_dataarray_data_V_enb;
-wire[7:0] allproj_dataarray_data_V_readaddr;
+wire[9:0] allproj_dataarray_data_V_readaddr;
 wire[59:0] allproj_dataarray_data_V_dout;
 wire[7:0] allproj_nentries_0_V_dout;
 wire[7:0] allproj_nentries_1_V_dout;
@@ -296,7 +297,7 @@ wire[7:0] allstub_nentries_6_V_din;
 reg allstub_nentries_7_V_we;
 wire[7:0] allstub_nentries_7_V_din;
 wire allstub_dataarray_data_V_enb;
-wire[7:0] allstub_dataarray_data_V_readaddr;
+wire[9:0] allstub_dataarray_data_V_readaddr;
 wire[35:0] allstub_dataarray_data_V_dout;
 wire[7:0] allstub_nentries_0_V_dout;
 wire[7:0] allstub_nentries_1_V_dout;
@@ -306,10 +307,6 @@ wire[7:0] allstub_nentries_4_V_dout;
 wire[7:0] allstub_nentries_5_V_dout;
 wire[7:0] allstub_nentries_6_V_dout;
 wire[7:0] allstub_nentries_7_V_dout;
-
-always @(posedge clk) begin
-  $display("%h", allproj_dataarray_data_V_dout);
-end
 
 wire FMCALC_L1L2XXH_L3PHIC_dataarray_data_V_wea;
 wire[7:0] FMCALC_L1L2XXH_L3PHIC_dataarray_data_V_writeaddr;
@@ -371,36 +368,36 @@ wire[7:0] FMCALC_L3L4XXH_L1PHIC_nentries_4_V_dout;
 wire[7:0] FMCALC_L3L4XXH_L1PHIC_nentries_5_V_dout;
 wire[7:0] FMCALC_L3L4XXH_L1PHIC_nentries_6_V_dout;
 wire[7:0] FMCALC_L3L4XXH_L1PHIC_nentries_7_V_dout;
-wire FMCALC_L5L6XXH_L1PHIC_dataarray_data_V_wea;
-wire[7:0] FMCALC_L5L6XXH_L1PHIC_dataarray_data_V_writeaddr;
-wire[44:0] FMCALC_L5L6XXH_L1PHIC_dataarray_data_V_din;
-wire FMCALC_L5L6XXH_L1PHIC_nentries_0_V_we;
-wire[7:0] FMCALC_L5L6XXH_L1PHIC_nentries_0_V_din;
-wire FMCALC_L5L6XXH_L1PHIC_nentries_1_V_we;
-wire[7:0] FMCALC_L5L6XXH_L1PHIC_nentries_1_V_din;
-wire FMCALC_L5L6XXH_L1PHIC_nentries_2_V_we;
-wire[7:0] FMCALC_L5L6XXH_L1PHIC_nentries_2_V_din;
-wire FMCALC_L5L6XXH_L1PHIC_nentries_3_V_we;
-wire[7:0] FMCALC_L5L6XXH_L1PHIC_nentries_3_V_din;
-wire FMCALC_L5L6XXH_L1PHIC_nentries_4_V_we;
-wire[7:0] FMCALC_L5L6XXH_L1PHIC_nentries_4_V_din;
-wire FMCALC_L5L6XXH_L1PHIC_nentries_5_V_we;
-wire[7:0] FMCALC_L5L6XXH_L1PHIC_nentries_5_V_din;
-wire FMCALC_L5L6XXH_L1PHIC_nentries_6_V_we;
-wire[7:0] FMCALC_L5L6XXH_L1PHIC_nentries_6_V_din;
-wire FMCALC_L5L6XXH_L1PHIC_nentries_7_V_we;
-wire[7:0] FMCALC_L5L6XXH_L1PHIC_nentries_7_V_din;
-wire[7:0] FMCALC_L5L6XXH_L1PHIC_dataarray_data_V_readaddr;
-wire FMCALC_L5L6XXH_L1PHIC_dataarray_data_V_enb;
-wire[44:0] FMCALC_L5L6XXH_L1PHIC_dataarray_data_V_dout;
-wire[7:0] FMCALC_L5L6XXH_L1PHIC_nentries_0_V_dout;
-wire[7:0] FMCALC_L5L6XXH_L1PHIC_nentries_1_V_dout;
-wire[7:0] FMCALC_L5L6XXH_L1PHIC_nentries_2_V_dout;
-wire[7:0] FMCALC_L5L6XXH_L1PHIC_nentries_3_V_dout;
-wire[7:0] FMCALC_L5L6XXH_L1PHIC_nentries_4_V_dout;
-wire[7:0] FMCALC_L5L6XXH_L1PHIC_nentries_5_V_dout;
-wire[7:0] FMCALC_L5L6XXH_L1PHIC_nentries_6_V_dout;
-wire[7:0] FMCALC_L5L6XXH_L1PHIC_nentries_7_V_dout;
+wire FMCALC_L5L6XXH_L3PHIC_dataarray_data_V_wea;
+wire[7:0] FMCALC_L5L6XXH_L3PHIC_dataarray_data_V_writeaddr;
+wire[44:0] FMCALC_L5L6XXH_L3PHIC_dataarray_data_V_din;
+wire FMCALC_L5L6XXH_L3PHIC_nentries_0_V_we;
+wire[7:0] FMCALC_L5L6XXH_L3PHIC_nentries_0_V_din;
+wire FMCALC_L5L6XXH_L3PHIC_nentries_1_V_we;
+wire[7:0] FMCALC_L5L6XXH_L3PHIC_nentries_1_V_din;
+wire FMCALC_L5L6XXH_L3PHIC_nentries_2_V_we;
+wire[7:0] FMCALC_L5L6XXH_L3PHIC_nentries_2_V_din;
+wire FMCALC_L5L6XXH_L3PHIC_nentries_3_V_we;
+wire[7:0] FMCALC_L5L6XXH_L3PHIC_nentries_3_V_din;
+wire FMCALC_L5L6XXH_L3PHIC_nentries_4_V_we;
+wire[7:0] FMCALC_L5L6XXH_L3PHIC_nentries_4_V_din;
+wire FMCALC_L5L6XXH_L3PHIC_nentries_5_V_we;
+wire[7:0] FMCALC_L5L6XXH_L3PHIC_nentries_5_V_din;
+wire FMCALC_L5L6XXH_L3PHIC_nentries_6_V_we;
+wire[7:0] FMCALC_L5L6XXH_L3PHIC_nentries_6_V_din;
+wire FMCALC_L5L6XXH_L3PHIC_nentries_7_V_we;
+wire[7:0] FMCALC_L5L6XXH_L3PHIC_nentries_7_V_din;
+wire[7:0] FMCALC_L5L6XXH_L3PHIC_dataarray_data_V_readaddr;
+wire FMCALC_L5L6XXH_L3PHIC_dataarray_data_V_enb;
+wire[44:0] FMCALC_L5L6XXH_L3PHIC_dataarray_data_V_dout;
+wire[7:0] FMCALC_L5L6XXH_L3PHIC_nentries_0_V_dout;
+wire[7:0] FMCALC_L5L6XXH_L3PHIC_nentries_1_V_dout;
+wire[7:0] FMCALC_L5L6XXH_L3PHIC_nentries_2_V_dout;
+wire[7:0] FMCALC_L5L6XXH_L3PHIC_nentries_3_V_dout;
+wire[7:0] FMCALC_L5L6XXH_L3PHIC_nentries_4_V_dout;
+wire[7:0] FMCALC_L5L6XXH_L3PHIC_nentries_5_V_dout;
+wire[7:0] FMCALC_L5L6XXH_L3PHIC_nentries_6_V_dout;
+wire[7:0] FMCALC_L5L6XXH_L3PHIC_nentries_7_V_dout;
 wire FMCALC_D1D2XXH_L1PHIC_dataarray_data_V_wea;
 wire[7:0] FMCALC_D1D2XXH_L1PHIC_dataarray_data_V_writeaddr;
 wire[44:0] FMCALC_D1D2XXH_L1PHIC_dataarray_data_V_din;
@@ -439,17 +436,17 @@ wire[7:0] FMCALC_D3D4XXH_L1PHIC_nentries_0_V_din;
 wire FMCALC_D3D4XXH_L1PHIC_nentries_1_V_we;
 wire[7:0] FMCALC_D3D4XXH_L1PHIC_nentries_1_V_din;
 wire FMCALC_D3D4XXH_L1PHIC_nentries_2_V_we;
-wire[8:0] FMCALC_D3D4XXH_L1PHIC_nentries_2_V_din;
+wire[7:0] FMCALC_D3D4XXH_L1PHIC_nentries_2_V_din;
 wire FMCALC_D3D4XXH_L1PHIC_nentries_3_V_we;
-wire[9:0] FMCALC_D3D4XXH_L1PHIC_nentries_3_V_din;
+wire[7:0] FMCALC_D3D4XXH_L1PHIC_nentries_3_V_din;
 wire FMCALC_D3D4XXH_L1PHIC_nentries_4_V_we;
-wire[10:0] FMCALC_D3D4XXH_L1PHIC_nentries_4_V_din;
+wire[7:0] FMCALC_D3D4XXH_L1PHIC_nentries_4_V_din;
 wire FMCALC_D3D4XXH_L1PHIC_nentries_5_V_we;
-wire[11:0] FMCALC_D3D4XXH_L1PHIC_nentries_5_V_din;
+wire[7:0] FMCALC_D3D4XXH_L1PHIC_nentries_5_V_din;
 wire FMCALC_D3D4XXH_L1PHIC_nentries_6_V_we;
-wire[12:0] FMCALC_D3D4XXH_L1PHIC_nentries_6_V_din;
+wire[7:0] FMCALC_D3D4XXH_L1PHIC_nentries_6_V_din;
 wire FMCALC_D3D4XXH_L1PHIC_nentries_7_V_we;
-wire[13:0] FMCALC_D3D4XXH_L1PHIC_nentries_7_V_din;
+wire[7:0] FMCALC_D3D4XXH_L1PHIC_nentries_7_V_din;
 wire[7:0] FMCALC_D3D4XXH_L1PHIC_dataarray_data_V_readaddr;
 wire FMCALC_D3D4XXH_L1PHIC_dataarray_data_V_enb;
 wire[44:0] FMCALC_D3D4XXH_L1PHIC_dataarray_data_V_dout;
@@ -581,14 +578,14 @@ initial begin
   MCALC_L1L2XXH_L3PHIC23_nentries_7_V_we = 1'b1;
 end
 
-reg[7:0] MCALC_L1L2XXH_L3PHIC17_nentreg_0 = 8'b01100100; // 100
-reg[7:0] MCALC_L1L2XXH_L3PHIC17_nentreg_1 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC17_nentreg_2 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC17_nentreg_3 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC17_nentreg_4 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC17_nentreg_5 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC17_nentreg_6 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC17_nentreg_7 = 8'b01100100; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC17_nentreg_0 = 8'b00000110; // 6
+reg[7:0] MCALC_L1L2XXH_L3PHIC17_nentreg_1 = 8'b00000100; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC17_nentreg_2 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC17_nentreg_3 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC17_nentreg_4 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC17_nentreg_5 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC17_nentreg_6 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC17_nentreg_7 = 8'b00000000; // 4
 assign MCALC_L1L2XXH_L3PHIC17_nentries_0_V_din = MCALC_L1L2XXH_L3PHIC17_nentreg_0;
 assign MCALC_L1L2XXH_L3PHIC17_nentries_1_V_din = MCALC_L1L2XXH_L3PHIC17_nentreg_1;
 assign MCALC_L1L2XXH_L3PHIC17_nentries_2_V_din = MCALC_L1L2XXH_L3PHIC17_nentreg_2;
@@ -597,14 +594,14 @@ assign MCALC_L1L2XXH_L3PHIC17_nentries_4_V_din = MCALC_L1L2XXH_L3PHIC17_nentreg_
 assign MCALC_L1L2XXH_L3PHIC17_nentries_5_V_din = MCALC_L1L2XXH_L3PHIC17_nentreg_5;
 assign MCALC_L1L2XXH_L3PHIC17_nentries_6_V_din = MCALC_L1L2XXH_L3PHIC17_nentreg_6;
 assign MCALC_L1L2XXH_L3PHIC17_nentries_7_V_din = MCALC_L1L2XXH_L3PHIC17_nentreg_7;
-reg[7:0] MCALC_L1L2XXH_L3PHIC18_nentreg_0 = 8'b01100100; // 10
-reg[7:0] MCALC_L1L2XXH_L3PHIC18_nentreg_1 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC18_nentreg_2 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC18_nentreg_3 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC18_nentreg_4 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC18_nentreg_5 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC18_nentreg_6 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC18_nentreg_7 = 8'b01100100; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC18_nentreg_0 = 8'b00000000; // 10
+reg[7:0] MCALC_L1L2XXH_L3PHIC18_nentreg_1 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC18_nentreg_2 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC18_nentreg_3 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC18_nentreg_4 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC18_nentreg_5 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC18_nentreg_6 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC18_nentreg_7 = 8'b00000000; // 4
 assign MCALC_L1L2XXH_L3PHIC18_nentries_0_V_din = MCALC_L1L2XXH_L3PHIC18_nentreg_0;
 assign MCALC_L1L2XXH_L3PHIC18_nentries_1_V_din = MCALC_L1L2XXH_L3PHIC18_nentreg_1;
 assign MCALC_L1L2XXH_L3PHIC18_nentries_2_V_din = MCALC_L1L2XXH_L3PHIC18_nentreg_2;
@@ -613,14 +610,14 @@ assign MCALC_L1L2XXH_L3PHIC18_nentries_4_V_din = MCALC_L1L2XXH_L3PHIC18_nentreg_
 assign MCALC_L1L2XXH_L3PHIC18_nentries_5_V_din = MCALC_L1L2XXH_L3PHIC18_nentreg_5;
 assign MCALC_L1L2XXH_L3PHIC18_nentries_6_V_din = MCALC_L1L2XXH_L3PHIC18_nentreg_6;
 assign MCALC_L1L2XXH_L3PHIC18_nentries_7_V_din = MCALC_L1L2XXH_L3PHIC18_nentreg_7;
-reg[7:0] MCALC_L1L2XXH_L3PHIC19_nentreg_0 = 8'b01100100; // 10
-reg[7:0] MCALC_L1L2XXH_L3PHIC19_nentreg_1 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC19_nentreg_2 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC19_nentreg_3 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC19_nentreg_4 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC19_nentreg_5 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC19_nentreg_6 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC19_nentreg_7 = 8'b01100100; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC19_nentreg_0 = 8'b00000000; // 10
+reg[7:0] MCALC_L1L2XXH_L3PHIC19_nentreg_1 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC19_nentreg_2 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC19_nentreg_3 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC19_nentreg_4 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC19_nentreg_5 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC19_nentreg_6 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC19_nentreg_7 = 8'b00000000; // 4
 assign MCALC_L1L2XXH_L3PHIC19_nentries_0_V_din = MCALC_L1L2XXH_L3PHIC19_nentreg_0;
 assign MCALC_L1L2XXH_L3PHIC19_nentries_1_V_din = MCALC_L1L2XXH_L3PHIC19_nentreg_1;
 assign MCALC_L1L2XXH_L3PHIC19_nentries_2_V_din = MCALC_L1L2XXH_L3PHIC19_nentreg_2;
@@ -629,14 +626,14 @@ assign MCALC_L1L2XXH_L3PHIC19_nentries_4_V_din = MCALC_L1L2XXH_L3PHIC19_nentreg_
 assign MCALC_L1L2XXH_L3PHIC19_nentries_5_V_din = MCALC_L1L2XXH_L3PHIC19_nentreg_5;
 assign MCALC_L1L2XXH_L3PHIC19_nentries_6_V_din = MCALC_L1L2XXH_L3PHIC19_nentreg_6;
 assign MCALC_L1L2XXH_L3PHIC19_nentries_7_V_din = MCALC_L1L2XXH_L3PHIC19_nentreg_7;
-reg[7:0] MCALC_L1L2XXH_L3PHIC20_nentreg_0 = 8'b01100100; // 10
-reg[7:0] MCALC_L1L2XXH_L3PHIC20_nentreg_1 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC20_nentreg_2 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC20_nentreg_3 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC20_nentreg_4 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC20_nentreg_5 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC20_nentreg_6 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC20_nentreg_7 = 8'b01100100; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC20_nentreg_0 = 8'b00000000; // 10
+reg[7:0] MCALC_L1L2XXH_L3PHIC20_nentreg_1 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC20_nentreg_2 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC20_nentreg_3 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC20_nentreg_4 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC20_nentreg_5 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC20_nentreg_6 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC20_nentreg_7 = 8'b00000000; // 4
 assign MCALC_L1L2XXH_L3PHIC20_nentries_0_V_din = MCALC_L1L2XXH_L3PHIC20_nentreg_0;
 assign MCALC_L1L2XXH_L3PHIC20_nentries_1_V_din = MCALC_L1L2XXH_L3PHIC20_nentreg_1;
 assign MCALC_L1L2XXH_L3PHIC20_nentries_2_V_din = MCALC_L1L2XXH_L3PHIC20_nentreg_2;
@@ -645,14 +642,14 @@ assign MCALC_L1L2XXH_L3PHIC20_nentries_4_V_din = MCALC_L1L2XXH_L3PHIC20_nentreg_
 assign MCALC_L1L2XXH_L3PHIC20_nentries_5_V_din = MCALC_L1L2XXH_L3PHIC20_nentreg_5;
 assign MCALC_L1L2XXH_L3PHIC20_nentries_6_V_din = MCALC_L1L2XXH_L3PHIC20_nentreg_6;
 assign MCALC_L1L2XXH_L3PHIC20_nentries_7_V_din = MCALC_L1L2XXH_L3PHIC20_nentreg_7;
-reg[7:0] MCALC_L1L2XXH_L3PHIC21_nentreg_0 = 8'b01100100; // 10
-reg[7:0] MCALC_L1L2XXH_L3PHIC21_nentreg_1 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC21_nentreg_2 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC21_nentreg_3 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC21_nentreg_4 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC21_nentreg_5 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC21_nentreg_6 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC21_nentreg_7 = 8'b01100100; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC21_nentreg_0 = 8'b00000000; // 10
+reg[7:0] MCALC_L1L2XXH_L3PHIC21_nentreg_1 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC21_nentreg_2 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC21_nentreg_3 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC21_nentreg_4 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC21_nentreg_5 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC21_nentreg_6 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC21_nentreg_7 = 8'b00000000; // 4
 assign MCALC_L1L2XXH_L3PHIC21_nentries_0_V_din = MCALC_L1L2XXH_L3PHIC21_nentreg_0;
 assign MCALC_L1L2XXH_L3PHIC21_nentries_1_V_din = MCALC_L1L2XXH_L3PHIC21_nentreg_1;
 assign MCALC_L1L2XXH_L3PHIC21_nentries_2_V_din = MCALC_L1L2XXH_L3PHIC21_nentreg_2;
@@ -661,14 +658,14 @@ assign MCALC_L1L2XXH_L3PHIC21_nentries_4_V_din = MCALC_L1L2XXH_L3PHIC21_nentreg_
 assign MCALC_L1L2XXH_L3PHIC21_nentries_5_V_din = MCALC_L1L2XXH_L3PHIC21_nentreg_5;
 assign MCALC_L1L2XXH_L3PHIC21_nentries_6_V_din = MCALC_L1L2XXH_L3PHIC21_nentreg_6;
 assign MCALC_L1L2XXH_L3PHIC21_nentries_7_V_din = MCALC_L1L2XXH_L3PHIC21_nentreg_7;
-reg[7:0] MCALC_L1L2XXH_L3PHIC22_nentreg_0 = 8'b01100100; // 10
-reg[7:0] MCALC_L1L2XXH_L3PHIC22_nentreg_1 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC22_nentreg_2 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC22_nentreg_3 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC22_nentreg_4 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC22_nentreg_5 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC22_nentreg_6 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC22_nentreg_7 = 8'b01100100; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC22_nentreg_0 = 8'b00000000; // 10
+reg[7:0] MCALC_L1L2XXH_L3PHIC22_nentreg_1 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC22_nentreg_2 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC22_nentreg_3 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC22_nentreg_4 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC22_nentreg_5 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC22_nentreg_6 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC22_nentreg_7 = 8'b00000000; // 4
 assign MCALC_L1L2XXH_L3PHIC22_nentries_0_V_din = MCALC_L1L2XXH_L3PHIC22_nentreg_0;
 assign MCALC_L1L2XXH_L3PHIC22_nentries_1_V_din = MCALC_L1L2XXH_L3PHIC22_nentreg_1;
 assign MCALC_L1L2XXH_L3PHIC22_nentries_2_V_din = MCALC_L1L2XXH_L3PHIC22_nentreg_2;
@@ -677,14 +674,14 @@ assign MCALC_L1L2XXH_L3PHIC22_nentries_4_V_din = MCALC_L1L2XXH_L3PHIC22_nentreg_
 assign MCALC_L1L2XXH_L3PHIC22_nentries_5_V_din = MCALC_L1L2XXH_L3PHIC22_nentreg_5;
 assign MCALC_L1L2XXH_L3PHIC22_nentries_6_V_din = MCALC_L1L2XXH_L3PHIC22_nentreg_6;
 assign MCALC_L1L2XXH_L3PHIC22_nentries_7_V_din = MCALC_L1L2XXH_L3PHIC22_nentreg_7;
-reg[7:0] MCALC_L1L2XXH_L3PHIC23_nentreg_0 = 8'b01100100; // 10
-reg[7:0] MCALC_L1L2XXH_L3PHIC23_nentreg_1 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC23_nentreg_2 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC23_nentreg_3 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC23_nentreg_4 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC23_nentreg_5 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC23_nentreg_6 = 8'b01100100; // 4
-reg[7:0] MCALC_L1L2XXH_L3PHIC23_nentreg_7 = 8'b01100100; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC23_nentreg_0 = 8'b00000000; // 10
+reg[7:0] MCALC_L1L2XXH_L3PHIC23_nentreg_1 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC23_nentreg_2 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC23_nentreg_3 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC23_nentreg_4 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC23_nentreg_5 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC23_nentreg_6 = 8'b00000000; // 4
+reg[7:0] MCALC_L1L2XXH_L3PHIC23_nentreg_7 = 8'b00000000; // 4
 assign MCALC_L1L2XXH_L3PHIC23_nentries_0_V_din = MCALC_L1L2XXH_L3PHIC23_nentreg_0;
 assign MCALC_L1L2XXH_L3PHIC23_nentries_1_V_din = MCALC_L1L2XXH_L3PHIC23_nentreg_1;
 assign MCALC_L1L2XXH_L3PHIC23_nentries_2_V_din = MCALC_L1L2XXH_L3PHIC23_nentreg_2;
@@ -698,8 +695,8 @@ wire[7:0] allproj_nentries_0 = 8'b01100100; // 100;
 wire[7:0] allproj_nentries_1 = 8'b01100100; // 100;
 assign allproj_nentries_0_V_din = allproj_nentries_0;
 assign allproj_nentries_1_V_din = allproj_nentries_1;
-wire[7:0] allstub_nentries_0 = 8'b01100100; // 100;
-wire[7:0] allstub_nentries_1 = 8'b01100100; // 100;
+wire[7:0] allstub_nentries_0 = 8'b11111111; // 255;
+wire[7:0] allstub_nentries_1 = 8'b11111111; // 255;
 assign allstub_nentries_0_V_din = allstub_nentries_0;
 assign allstub_nentries_1_V_din = allstub_nentries_1;
 
@@ -998,12 +995,12 @@ Memory #(
 );
 
 Memory #(
-  .RAM_WIDTH(62),
-  .RAM_DEPTH(100),
+  .RAM_WIDTH(60),
+  .RAM_DEPTH(256),
   .RAM_PERFORMANCE("HIGH_PERFORMANCE"),
   .HEX(0),
   .INIT_FILE("AllProj_AP_L3PHIC_04.dat")
-) allproj_L3PHIC23 (
+) allproj_L3PHIC (
   .clka(clk),
   .clkb(clk),
   .wea(allproj_dataarray_data_V_wea),
@@ -1040,12 +1037,12 @@ Memory #(
 );
 
 Memory #(
-  .RAM_WIDTH(62),
-  .RAM_DEPTH(100),
+  .RAM_WIDTH(36),
+  .RAM_DEPTH(256),
   .RAM_PERFORMANCE("HIGH_PERFORMANCE"),
   .HEX(0),
   .INIT_FILE("AllStubs_AS_L3PHICn4_04.dat")
-) allstub_L3PHIC23 (
+) allstub_L3PHIC (
   .clka(clk),
   .clkb(clk),
   .wea(allstub_dataarray_data_V_wea),
@@ -1083,7 +1080,7 @@ Memory #(
 
 Memory #(
   .RAM_WIDTH(45),
-  .RAM_DEPTH(10),
+  .RAM_DEPTH(256),
   .RAM_PERFORMANCE("HIGH_PERFORMANCE"),
   .HEX(0),
   .INIT_FILE("")
@@ -1174,36 +1171,36 @@ Memory #(
 ) FMCALC_L5L6XXH_L3PHIC (
   .clka(clk),
   .clkb(clk),
-  .wea(FMCALC_L5L6XXH_L1PHIC_dataarray_data_V_wea),
-  .addra(FMCALC_L5L6XXH_L1PHIC_dataarray_data_V_writeaddr),
-  .dina(FMCALC_L5L6XXH_L1PHIC_dataarray_data_V_din),
-  .nent_we0(FMCALC_L5L6XXH_L1PHIC_nentries_0_V_we),
-  .nent_i0(FMCALC_L5L6XXH_L1PHIC_nentries_0_V_din),
-  .nent_we1(FMCALC_L5L6XXH_L1PHIC_nentries_1_V_we),
-  .nent_i1(FMCALC_L5L6XXH_L1PHIC_nentries_1_V_din),
-  .nent_we2(FMCALC_L5L6XXH_L1PHIC_nentries_2_V_we),
-  .nent_i2(FMCALC_L5L6XXH_L1PHIC_nentries_2_V_din),
-  .nent_we3(FMCALC_L5L6XXH_L1PHIC_nentries_3_V_we),
-  .nent_i3(FMCALC_L5L6XXH_L1PHIC_nentries_3_V_din),
-  .nent_we4(FMCALC_L5L6XXH_L1PHIC_nentries_4_V_we),
-  .nent_i4(FMCALC_L5L6XXH_L1PHIC_nentries_4_V_din),
-  .nent_we5(FMCALC_L5L6XXH_L1PHIC_nentries_5_V_we),
-  .nent_i5(FMCALC_L5L6XXH_L1PHIC_nentries_5_V_din),
-  .nent_we6(FMCALC_L5L6XXH_L1PHIC_nentries_6_V_we),
-  .nent_i6(FMCALC_L5L6XXH_L1PHIC_nentries_6_V_din),
-  .nent_we7(FMCALC_L5L6XXH_L1PHIC_nentries_7_V_we),
-  .nent_i7(FMCALC_L5L6XXH_L1PHIC_nentries_7_V_din),
-  .enb(FMCALC_L5L6XXH_L1PHIC_dataarray_data_V_enb),
-  .addrb(FMCALC_L5L6XXH_L1PHIC_dataarray_data_V_readaddr),
-  .doutb(FMCALC_L5L6XXH_L1PHIC_dataarray_data_V_dout),
-  .nent_o0(FMCALC_L5L6XXH_L1PHIC_nentries_0_V_dout),
-  .nent_o1(FMCALC_L5L6XXH_L1PHIC_nentries_1_V_dout),
-  .nent_o2(FMCALC_L5L6XXH_L1PHIC_nentries_2_V_dout),
-  .nent_o3(FMCALC_L5L6XXH_L1PHIC_nentries_3_V_dout),
-  .nent_o4(FMCALC_L5L6XXH_L1PHIC_nentries_4_V_dout),
-  .nent_o5(FMCALC_L5L6XXH_L1PHIC_nentries_5_V_dout),
-  .nent_o6(FMCALC_L5L6XXH_L1PHIC_nentries_6_V_dout),
-  .nent_o7(FMCALC_L5L6XXH_L1PHIC_nentries_7_V_dout),
+  .wea(FMCALC_L5L6XXH_L3PHIC_dataarray_data_V_wea),
+  .addra(FMCALC_L5L6XXH_L3PHIC_dataarray_data_V_writeaddr),
+  .dina(FMCALC_L5L6XXH_L3PHIC_dataarray_data_V_din),
+  .nent_we0(FMCALC_L5L6XXH_L3PHIC_nentries_0_V_we),
+  .nent_i0(FMCALC_L5L6XXH_L3PHIC_nentries_0_V_din),
+  .nent_we1(FMCALC_L5L6XXH_L3PHIC_nentries_1_V_we),
+  .nent_i1(FMCALC_L5L6XXH_L3PHIC_nentries_1_V_din),
+  .nent_we2(FMCALC_L5L6XXH_L3PHIC_nentries_2_V_we),
+  .nent_i2(FMCALC_L5L6XXH_L3PHIC_nentries_2_V_din),
+  .nent_we3(FMCALC_L5L6XXH_L3PHIC_nentries_3_V_we),
+  .nent_i3(FMCALC_L5L6XXH_L3PHIC_nentries_3_V_din),
+  .nent_we4(FMCALC_L5L6XXH_L3PHIC_nentries_4_V_we),
+  .nent_i4(FMCALC_L5L6XXH_L3PHIC_nentries_4_V_din),
+  .nent_we5(FMCALC_L5L6XXH_L3PHIC_nentries_5_V_we),
+  .nent_i5(FMCALC_L5L6XXH_L3PHIC_nentries_5_V_din),
+  .nent_we6(FMCALC_L5L6XXH_L3PHIC_nentries_6_V_we),
+  .nent_i6(FMCALC_L5L6XXH_L3PHIC_nentries_6_V_din),
+  .nent_we7(FMCALC_L5L6XXH_L3PHIC_nentries_7_V_we),
+  .nent_i7(FMCALC_L5L6XXH_L3PHIC_nentries_7_V_din),
+  .enb(FMCALC_L5L6XXH_L3PHIC_dataarray_data_V_enb),
+  .addrb(FMCALC_L5L6XXH_L3PHIC_dataarray_data_V_readaddr),
+  .doutb(FMCALC_L5L6XXH_L3PHIC_dataarray_data_V_dout),
+  .nent_o0(FMCALC_L5L6XXH_L3PHIC_nentries_0_V_dout),
+  .nent_o1(FMCALC_L5L6XXH_L3PHIC_nentries_1_V_dout),
+  .nent_o2(FMCALC_L5L6XXH_L3PHIC_nentries_2_V_dout),
+  .nent_o3(FMCALC_L5L6XXH_L3PHIC_nentries_3_V_dout),
+  .nent_o4(FMCALC_L5L6XXH_L3PHIC_nentries_4_V_dout),
+  .nent_o5(FMCALC_L5L6XXH_L3PHIC_nentries_5_V_dout),
+  .nent_o6(FMCALC_L5L6XXH_L3PHIC_nentries_6_V_dout),
+  .nent_o7(FMCALC_L5L6XXH_L3PHIC_nentries_7_V_dout),
   .regceb(1'b1)
 );
 
@@ -1369,7 +1366,7 @@ SectorProcessor SectorProcessor_inst (
     .ap_rst(reset),
     .ap_start(en_proc),
     .bx_V(bx_in_MatchCalculator),
-    .match1_dataarray_data_V_writeaddr(MCALC_L1L2XXH_L3PHIC17_dataarray_data_V_readaddr),
+    .match1_dataarray_data_V_readaddr(MCALC_L1L2XXH_L3PHIC17_dataarray_data_V_readaddr),
     .match1_dataarray_data_V_enb(MCALC_L1L2XXH_L3PHIC17_dataarray_data_V_enb),
     .match1_dataarray_data_V_dout(MCALC_L1L2XXH_L3PHIC17_dataarray_data_V_dout),
     .match1_nentries_0_V(MCALC_L1L2XXH_L3PHIC17_nentries_0_V_dout),
@@ -1380,7 +1377,7 @@ SectorProcessor SectorProcessor_inst (
     .match1_nentries_5_V(MCALC_L1L2XXH_L3PHIC17_nentries_5_V_dout),
     .match1_nentries_6_V(MCALC_L1L2XXH_L3PHIC17_nentries_6_V_dout),
     .match1_nentries_7_V(MCALC_L1L2XXH_L3PHIC17_nentries_7_V_dout),
-    .match2_dataarray_data_V_writeaddr(MCALC_L1L2XXH_L3PHIC18_dataarray_data_V_readaddr),
+    .match2_dataarray_data_V_readaddr(MCALC_L1L2XXH_L3PHIC18_dataarray_data_V_readaddr),
     .match2_dataarray_data_V_enb(MCALC_L1L2XXH_L3PHIC18_dataarray_data_V_enb),
     .match2_dataarray_data_V_dout(MCALC_L1L2XXH_L3PHIC18_dataarray_data_V_dout),
     .match2_nentries_0_V(MCALC_L1L2XXH_L3PHIC18_nentries_0_V_dout),
@@ -1391,7 +1388,7 @@ SectorProcessor SectorProcessor_inst (
     .match2_nentries_5_V(MCALC_L1L2XXH_L3PHIC18_nentries_5_V_dout),
     .match2_nentries_6_V(MCALC_L1L2XXH_L3PHIC18_nentries_6_V_dout),
     .match2_nentries_7_V(MCALC_L1L2XXH_L3PHIC18_nentries_7_V_dout),
-    .match3_dataarray_data_V_writeaddr(MCALC_L1L2XXH_L3PHIC19_dataarray_data_V_readaddr),
+    .match3_dataarray_data_V_readaddr(MCALC_L1L2XXH_L3PHIC19_dataarray_data_V_readaddr),
     .match3_dataarray_data_V_enb(MCALC_L1L2XXH_L3PHIC19_dataarray_data_V_enb),
     .match3_dataarray_data_V_dout(MCALC_L1L2XXH_L3PHIC19_dataarray_data_V_dout),
     .match3_nentries_0_V(MCALC_L1L2XXH_L3PHIC19_nentries_0_V_dout),
@@ -1402,7 +1399,7 @@ SectorProcessor SectorProcessor_inst (
     .match3_nentries_5_V(MCALC_L1L2XXH_L3PHIC19_nentries_5_V_dout),
     .match3_nentries_6_V(MCALC_L1L2XXH_L3PHIC19_nentries_6_V_dout),
     .match3_nentries_7_V(MCALC_L1L2XXH_L3PHIC19_nentries_7_V_dout),
-    .match4_dataarray_data_V_writeaddr(MCALC_L1L2XXH_L3PHIC20_dataarray_data_V_readaddr),
+    .match4_dataarray_data_V_readaddr(MCALC_L1L2XXH_L3PHIC20_dataarray_data_V_readaddr),
     .match4_dataarray_data_V_enb(MCALC_L1L2XXH_L3PHIC20_dataarray_data_V_enb),
     .match4_dataarray_data_V_dout(MCALC_L1L2XXH_L3PHIC20_dataarray_data_V_dout),
     .match4_nentries_0_V(MCALC_L1L2XXH_L3PHIC20_nentries_0_V_dout),
@@ -1413,7 +1410,7 @@ SectorProcessor SectorProcessor_inst (
     .match4_nentries_5_V(MCALC_L1L2XXH_L3PHIC20_nentries_5_V_dout),
     .match4_nentries_6_V(MCALC_L1L2XXH_L3PHIC20_nentries_6_V_dout),
     .match4_nentries_7_V(MCALC_L1L2XXH_L3PHIC20_nentries_7_V_dout),
-    .match5_dataarray_data_V_writeaddr(MCALC_L1L2XXH_L3PHIC21_dataarray_data_V_readaddr),
+    .match5_dataarray_data_V_readaddr(MCALC_L1L2XXH_L3PHIC21_dataarray_data_V_readaddr),
     .match5_dataarray_data_V_enb(MCALC_L1L2XXH_L3PHIC21_dataarray_data_V_enb),
     .match5_dataarray_data_V_dout(MCALC_L1L2XXH_L3PHIC21_dataarray_data_V_dout),
     .match5_nentries_0_V(MCALC_L1L2XXH_L3PHIC21_nentries_0_V_dout),
@@ -1424,7 +1421,7 @@ SectorProcessor SectorProcessor_inst (
     .match5_nentries_5_V(MCALC_L1L2XXH_L3PHIC21_nentries_5_V_dout),
     .match5_nentries_6_V(MCALC_L1L2XXH_L3PHIC21_nentries_6_V_dout),
     .match5_nentries_7_V(MCALC_L1L2XXH_L3PHIC21_nentries_7_V_dout),
-    .match6_dataarray_data_V_writeaddr(MCALC_L1L2XXH_L3PHIC22_dataarray_data_V_readaddr),
+    .match6_dataarray_data_V_readaddr(MCALC_L1L2XXH_L3PHIC22_dataarray_data_V_readaddr),
     .match6_dataarray_data_V_enb(MCALC_L1L2XXH_L3PHIC22_dataarray_data_V_enb),
     .match6_dataarray_data_V_dout(MCALC_L1L2XXH_L3PHIC22_dataarray_data_V_dout),
     .match6_nentries_0_V(MCALC_L1L2XXH_L3PHIC22_nentries_0_V_dout),
@@ -1435,7 +1432,7 @@ SectorProcessor SectorProcessor_inst (
     .match6_nentries_5_V(MCALC_L1L2XXH_L3PHIC22_nentries_5_V_dout),
     .match6_nentries_6_V(MCALC_L1L2XXH_L3PHIC22_nentries_6_V_dout),
     .match6_nentries_7_V(MCALC_L1L2XXH_L3PHIC22_nentries_7_V_dout),
-    .match7_dataarray_data_V_writeaddr(MCALC_L1L2XXH_L3PHIC23_dataarray_data_V_readaddr),
+    .match7_dataarray_data_V_readaddr(MCALC_L1L2XXH_L3PHIC23_dataarray_data_V_readaddr),
     .match7_dataarray_data_V_enb(MCALC_L1L2XXH_L3PHIC23_dataarray_data_V_enb),
     .match7_dataarray_data_V_dout(MCALC_L1L2XXH_L3PHIC23_dataarray_data_V_dout),
     .match7_nentries_0_V(MCALC_L1L2XXH_L3PHIC23_nentries_0_V_dout),
@@ -1446,7 +1443,7 @@ SectorProcessor SectorProcessor_inst (
     .match7_nentries_5_V(MCALC_L1L2XXH_L3PHIC23_nentries_5_V_dout),
     .match7_nentries_6_V(MCALC_L1L2XXH_L3PHIC23_nentries_6_V_dout),
     .match7_nentries_7_V(MCALC_L1L2XXH_L3PHIC23_nentries_7_V_dout),
-    .allstub_dataarray_data_V_writeaddr(allstub_dataarray_data_V_readaddr),
+    .allstub_dataarray_data_V_readaddr(allstub_dataarray_data_V_readaddr),
     .allstub_dataarray_data_V_enb(allstub_dataarray_data_V_enb),
     .allstub_dataarray_data_V_dout(allstub_dataarray_data_V_dout),
     .allstub_nentries_0_V(allstub_nentries_0_V_dout),
@@ -1457,7 +1454,7 @@ SectorProcessor SectorProcessor_inst (
     .allstub_nentries_5_V(allstub_nentries_5_V_dout),
     .allstub_nentries_6_V(allstub_nentries_6_V_dout),
     .allstub_nentries_7_V(allstub_nentries_7_V_dout),
-    .allproj_dataarray_data_V_writeaddr(allproj_dataarray_data_V_readaddr),
+    .allproj_dataarray_data_V_readaddr(allproj_dataarray_data_V_readaddr),
     .allproj_dataarray_data_V_enb(allproj_dataarray_data_V_enb),
     .allproj_dataarray_data_V_dout(allproj_dataarray_data_V_dout),
     .allproj_nentries_0_V(allproj_nentries_0_V_dout),
@@ -1507,25 +1504,25 @@ SectorProcessor SectorProcessor_inst (
     .fullmatch2_nentries_5_V_ap_vld(FMCALC_L3L4XXH_L1PHIC_nentries_5_V_we),
     .fullmatch2_nentries_6_V_ap_vld(FMCALC_L3L4XXH_L1PHIC_nentries_6_V_we),
     .fullmatch2_nentries_7_V_ap_vld(FMCALC_L3L4XXH_L1PHIC_nentries_7_V_we),
-    .fullmatch3_dataarray_data_V_writeaddr(FMCALC_L5L6XXH_L1PHIC_dataarray_data_V_writeaddr),
-    .fullmatch3_dataarray_data_V_we0(FMCALC_L5L6XXH_L1PHIC_dataarray_data_V_wea),
-    .fullmatch3_dataarray_data_V_din(FMCALC_L5L6XXH_L1PHIC_dataarray_data_V_din),
-    .fullmatch3_nentries_0_V(FMCALC_L5L6XXH_L1PHIC_nentries_0_V_din),
-    .fullmatch3_nentries_1_V(FMCALC_L5L6XXH_L1PHIC_nentries_1_V_din),
-    .fullmatch3_nentries_2_V(FMCALC_L5L6XXH_L1PHIC_nentries_2_V_din),
-    .fullmatch3_nentries_3_V(FMCALC_L5L6XXH_L1PHIC_nentries_3_V_din),
-    .fullmatch3_nentries_4_V(FMCALC_L5L6XXH_L1PHIC_nentries_4_V_din),
-    .fullmatch3_nentries_5_V(FMCALC_L5L6XXH_L1PHIC_nentries_5_V_din),
-    .fullmatch3_nentries_6_V(FMCALC_L5L6XXH_L1PHIC_nentries_6_V_din),
-    .fullmatch3_nentries_7_V(FMCALC_L5L6XXH_L1PHIC_nentries_7_V_din),
-    .fullmatch3_nentries_0_V_ap_vld(FMCALC_L5L6XXH_L1PHIC_nentries_0_V_we),
-    .fullmatch3_nentries_1_V_ap_vld(FMCALC_L5L6XXH_L1PHIC_nentries_1_V_we),
-    .fullmatch3_nentries_2_V_ap_vld(FMCALC_L5L6XXH_L1PHIC_nentries_2_V_we),
-    .fullmatch3_nentries_3_V_ap_vld(FMCALC_L5L6XXH_L1PHIC_nentries_3_V_we),
-    .fullmatch3_nentries_4_V_ap_vld(FMCALC_L5L6XXH_L1PHIC_nentries_4_V_we),
-    .fullmatch3_nentries_5_V_ap_vld(FMCALC_L5L6XXH_L1PHIC_nentries_5_V_we),
-    .fullmatch3_nentries_6_V_ap_vld(FMCALC_L5L6XXH_L1PHIC_nentries_6_V_we),
-    .fullmatch3_nentries_7_V_ap_vld(FMCALC_L5L6XXH_L1PHIC_nentries_7_V_we),
+    .fullmatch3_dataarray_data_V_writeaddr(FMCALC_L5L6XXH_L3PHIC_dataarray_data_V_writeaddr),
+    .fullmatch3_dataarray_data_V_we0(FMCALC_L5L6XXH_L3PHIC_dataarray_data_V_wea),
+    .fullmatch3_dataarray_data_V_din(FMCALC_L5L6XXH_L3PHIC_dataarray_data_V_din),
+    .fullmatch3_nentries_0_V(FMCALC_L5L6XXH_L3PHIC_nentries_0_V_din),
+    .fullmatch3_nentries_1_V(FMCALC_L5L6XXH_L3PHIC_nentries_1_V_din),
+    .fullmatch3_nentries_2_V(FMCALC_L5L6XXH_L3PHIC_nentries_2_V_din),
+    .fullmatch3_nentries_3_V(FMCALC_L5L6XXH_L3PHIC_nentries_3_V_din),
+    .fullmatch3_nentries_4_V(FMCALC_L5L6XXH_L3PHIC_nentries_4_V_din),
+    .fullmatch3_nentries_5_V(FMCALC_L5L6XXH_L3PHIC_nentries_5_V_din),
+    .fullmatch3_nentries_6_V(FMCALC_L5L6XXH_L3PHIC_nentries_6_V_din),
+    .fullmatch3_nentries_7_V(FMCALC_L5L6XXH_L3PHIC_nentries_7_V_din),
+    .fullmatch3_nentries_0_V_ap_vld(FMCALC_L5L6XXH_L3PHIC_nentries_0_V_we),
+    .fullmatch3_nentries_1_V_ap_vld(FMCALC_L5L6XXH_L3PHIC_nentries_1_V_we),
+    .fullmatch3_nentries_2_V_ap_vld(FMCALC_L5L6XXH_L3PHIC_nentries_2_V_we),
+    .fullmatch3_nentries_3_V_ap_vld(FMCALC_L5L6XXH_L3PHIC_nentries_3_V_we),
+    .fullmatch3_nentries_4_V_ap_vld(FMCALC_L5L6XXH_L3PHIC_nentries_4_V_we),
+    .fullmatch3_nentries_5_V_ap_vld(FMCALC_L5L6XXH_L3PHIC_nentries_5_V_we),
+    .fullmatch3_nentries_6_V_ap_vld(FMCALC_L5L6XXH_L3PHIC_nentries_6_V_we),
+    .fullmatch3_nentries_7_V_ap_vld(FMCALC_L5L6XXH_L3PHIC_nentries_7_V_we),
     .fullmatch4_dataarray_data_V_writeaddr(FMCALC_D1D2XXH_L1PHIC_dataarray_data_V_writeaddr),
     .fullmatch4_dataarray_data_V_we0(FMCALC_D1D2XXH_L1PHIC_dataarray_data_V_wea),
     .fullmatch4_dataarray_data_V_din(FMCALC_D1D2XXH_L1PHIC_dataarray_data_V_din),
