@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="SectorProcessor_test_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="SectorProcessor_test" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1079722811fs"></ZoomStartTime>
+      <ZoomEndTime time="1171385949fs"></ZoomEndTime>
+      <Cursor1Time time="1095000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="351"></NameColumnWidth>
+      <ValueColumnWidth column_width="85"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="29" />
+   <wvobject type="logic" fp_name="/SectorProcessor_test/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/en_proc">
+      <obj_property name="ElementShortName">en_proc</obj_property>
+      <obj_property name="ObjectShortName">en_proc</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/bx_in_MatchCalculator">
+      <obj_property name="ElementShortName">bx_in_MatchCalculator[2:0]</obj_property>
+      <obj_property name="ObjectShortName">bx_in_MatchCalculator[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/bx_out_MatchCalculator">
+      <obj_property name="ElementShortName">bx_out_MatchCalculator[2:0]</obj_property>
+      <obj_property name="ObjectShortName">bx_out_MatchCalculator[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/MCALC_L1L2XXH_L3PHIC17_dataarray_data_V_dout">
+      <obj_property name="ElementShortName">MCALC_L1L2XXH_L3PHIC17_dataarray_data_V_dout[13:0]</obj_property>
+      <obj_property name="ObjectShortName">MCALC_L1L2XXH_L3PHIC17_dataarray_data_V_dout[13:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/MCALC_L1L2XXH_L3PHIC17/BRAM">
+      <obj_property name="ElementShortName">BRAM[255:0][13:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM[255:0][13:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/MCALC_L1L2XXH_L3PHIC18_dataarray_data_V_dout">
+      <obj_property name="ElementShortName">MCALC_L1L2XXH_L3PHIC18_dataarray_data_V_dout[13:0]</obj_property>
+      <obj_property name="ObjectShortName">MCALC_L1L2XXH_L3PHIC18_dataarray_data_V_dout[13:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/MCALC_L1L2XXH_L3PHIC19_dataarray_data_V_dout">
+      <obj_property name="ElementShortName">MCALC_L1L2XXH_L3PHIC19_dataarray_data_V_dout[13:0]</obj_property>
+      <obj_property name="ObjectShortName">MCALC_L1L2XXH_L3PHIC19_dataarray_data_V_dout[13:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/MCALC_L1L2XXH_L3PHIC20_dataarray_data_V_dout">
+      <obj_property name="ElementShortName">MCALC_L1L2XXH_L3PHIC20_dataarray_data_V_dout[13:0]</obj_property>
+      <obj_property name="ObjectShortName">MCALC_L1L2XXH_L3PHIC20_dataarray_data_V_dout[13:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/MCALC_L1L2XXH_L3PHIC21_dataarray_data_V_dout">
+      <obj_property name="ElementShortName">MCALC_L1L2XXH_L3PHIC21_dataarray_data_V_dout[13:0]</obj_property>
+      <obj_property name="ObjectShortName">MCALC_L1L2XXH_L3PHIC21_dataarray_data_V_dout[13:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/MCALC_L1L2XXH_L3PHIC22_dataarray_data_V_dout">
+      <obj_property name="ElementShortName">MCALC_L1L2XXH_L3PHIC22_dataarray_data_V_dout[13:0]</obj_property>
+      <obj_property name="ObjectShortName">MCALC_L1L2XXH_L3PHIC22_dataarray_data_V_dout[13:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/MCALC_L1L2XXH_L3PHIC23_dataarray_data_V_dout">
+      <obj_property name="ElementShortName">MCALC_L1L2XXH_L3PHIC23_dataarray_data_V_dout[13:0]</obj_property>
+      <obj_property name="ObjectShortName">MCALC_L1L2XXH_L3PHIC23_dataarray_data_V_dout[13:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/allproj_dataarray_data_V_dout">
+      <obj_property name="ElementShortName">allproj_dataarray_data_V_dout[59:0]</obj_property>
+      <obj_property name="ObjectShortName">allproj_dataarray_data_V_dout[59:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/allproj_L3PHIC/BRAM">
+      <obj_property name="ElementShortName">BRAM[255:0][59:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM[255:0][59:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/allstub_dataarray_data_V_dout">
+      <obj_property name="ElementShortName">allstub_dataarray_data_V_dout[35:0]</obj_property>
+      <obj_property name="ObjectShortName">allstub_dataarray_data_V_dout[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/allstub_L3PHIC/BRAM">
+      <obj_property name="ElementShortName">BRAM[255:0][35:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM[255:0][35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FMCALC_L1L2XXH_L3PHIC_dataarray_data_V_din">
+      <obj_property name="ElementShortName">FMCALC_L1L2XXH_L3PHIC_dataarray_data_V_din[44:0]</obj_property>
+      <obj_property name="ObjectShortName">FMCALC_L1L2XXH_L3PHIC_dataarray_data_V_din[44:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FMCALC_L1L2XXH_L3PHIC/BRAM">
+      <obj_property name="ElementShortName">BRAM[255:0][44:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM[255:0][44:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FMCALC_L3L4XXH_L1PHIC_dataarray_data_V_din">
+      <obj_property name="ElementShortName">FMCALC_L3L4XXH_L1PHIC_dataarray_data_V_din[44:0]</obj_property>
+      <obj_property name="ObjectShortName">FMCALC_L3L4XXH_L1PHIC_dataarray_data_V_din[44:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FMCALC_L5L6XXH_L3PHIC_dataarray_data_V_din">
+      <obj_property name="ElementShortName">FMCALC_L5L6XXH_L3PHIC_dataarray_data_V_din[44:0]</obj_property>
+      <obj_property name="ObjectShortName">FMCALC_L5L6XXH_L3PHIC_dataarray_data_V_din[44:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FMCALC_D1D2XXH_L1PHIC_dataarray_data_V_din">
+      <obj_property name="ElementShortName">FMCALC_D1D2XXH_L1PHIC_dataarray_data_V_din[44:0]</obj_property>
+      <obj_property name="ObjectShortName">FMCALC_D1D2XXH_L1PHIC_dataarray_data_V_din[44:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FMCALC_D3D4XXH_L1PHIC_dataarray_data_V_din">
+      <obj_property name="ElementShortName">FMCALC_D3D4XXH_L1PHIC_dataarray_data_V_din[44:0]</obj_property>
+      <obj_property name="ObjectShortName">FMCALC_D3D4XXH_L1PHIC_dataarray_data_V_din[44:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FMCALC_D5D6XXH_L1PHIC_dataarray_data_V_din">
+      <obj_property name="ElementShortName">FMCALC_D5D6XXH_L1PHIC_dataarray_data_V_din[44:0]</obj_property>
+      <obj_property name="ObjectShortName">FMCALC_D5D6XXH_L1PHIC_dataarray_data_V_din[44:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FMCALC_L2D1XXH_L1PHIC_dataarray_data_V_din">
+      <obj_property name="ElementShortName">FMCALC_L2D1XXH_L1PHIC_dataarray_data_V_din[44:0]</obj_property>
+      <obj_property name="ObjectShortName">FMCALC_L2D1XXH_L1PHIC_dataarray_data_V_din[44:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/SectorProcessor_inst/MC/inst/grp_MatchCalculator_fu_248/projid_V_reg_8963">
+      <obj_property name="ElementShortName">projid_V_reg_8963[6:0]</obj_property>
+      <obj_property name="ObjectShortName">projid_V_reg_8963[6:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/SectorProcessor_inst/MC/inst/grp_MatchCalculator_fu_248/stubid_V_reg_8970">
+      <obj_property name="ElementShortName">stubid_V_reg_8970[6:0]</obj_property>
+      <obj_property name="ObjectShortName">stubid_V_reg_8970[6:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/SectorProcessor_inst/MC/inst/grp_MatchCalculator_fu_248/bestmatch_data_V_fu_8011_p3">
+      <obj_property name="ElementShortName">bestmatch_data_V_fu_8011_p3[44:0]</obj_property>
+      <obj_property name="ObjectShortName">bestmatch_data_V_fu_8011_p3[44:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/SectorProcessor_inst/MC/inst/grp_MatchCalculator_fu_248/bestmatch_next_data_s_fu_7928_p6">
+      <obj_property name="ElementShortName">bestmatch_next_data_s_fu_7928_p6[44:0]</obj_property>
+      <obj_property name="ObjectShortName">bestmatch_next_data_s_fu_7928_p6[44:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>
