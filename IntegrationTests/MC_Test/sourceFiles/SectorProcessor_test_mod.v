@@ -1674,12 +1674,14 @@ SectorProcessor SectorProcessor_inst (
     .fullmatch6_dataarray_data_V_din(FMCALC_D5D6XXH_L1PHIC_dataarray_data_V_din),
     .fullmatch6_nentries_0_V(FMCALC_D5D6XXH_L1PHIC_nentries_0_V_din),
     .fullmatch6_nentries_1_V(FMCALC_D5D6XXH_L1PHIC_nentries_1_V_din),
+    /*
     .fullmatch6_nentries_2_V(FMCALC_D5D6XXH_L1PHIC_nentries_2_V_din),
     .fullmatch6_nentries_3_V(FMCALC_D5D6XXH_L1PHIC_nentries_3_V_din),
     .fullmatch6_nentries_4_V(FMCALC_D5D6XXH_L1PHIC_nentries_4_V_din),
     .fullmatch6_nentries_5_V(FMCALC_D5D6XXH_L1PHIC_nentries_5_V_din),
     .fullmatch6_nentries_6_V(FMCALC_D5D6XXH_L1PHIC_nentries_6_V_din),
     .fullmatch6_nentries_7_V(FMCALC_D5D6XXH_L1PHIC_nentries_7_V_din),
+    */
     .fullmatch6_nentries_0_V_ap_vld(FMCALC_D5D6XXH_L1PHIC_nentries_0_V_we),
     .fullmatch6_nentries_1_V_ap_vld(FMCALC_D5D6XXH_L1PHIC_nentries_1_V_we),
     /*
