@@ -27,9 +27,9 @@
 #
 # 3. The following remote source files that were added to the original project:-
 #
-#    "/var/home/Xilinx/tracktrigger/firmware-hls/IntegrationTests/MC_Test/sourceFiles/SectorProcessor_mod.v"
+#    "/var/home/Xilinx/tracktrigger/firmware-hls/IntegrationTests/MC_Test/sourceFiles/SectorProcessor.v"
 #    "/var/home/Xilinx/tracktrigger/firmware-hls/IntegrationTests/MC_Test/sourceFiles/Memory.v"
-#    "/var/home/Xilinx/tracktrigger/firmware-hls/IntegrationTests/MC_Test/sourceFiles/SectorProcessor_test_mod.v"
+#    "/var/home/Xilinx/tracktrigger/firmware-hls/IntegrationTests/MC_Test/sourceFiles/SectorProcessor_test.v"
 #    "/var/home/Xilinx/tracktrigger/firmware-hls/IntegrationTests/MC_Test/emData/CandidateMatches_CM_L3PHIC17_04.dat"
 #    "/var/home/Xilinx/tracktrigger/firmware-hls/IntegrationTests/MC_Test/emData/AllProj_AP_L3PHIC_04.dat"
 #    "/var/home/Xilinx/tracktrigger/firmware-hls/IntegrationTests/MC_Test/emData/AllStubs_AS_L3PHICn4_04.dat"
@@ -166,7 +166,7 @@ update_ip_catalog -rebuild
 # Set 'sources_1' fileset object
 set obj [get_filesets sources_1]
 set files [list \
- [file normalize "${origin_dir}/sourceFiles/SectorProcessor_mod.v"] \
+ [file normalize "${origin_dir}/sourceFiles/SectorProcessor.v"] \
 ]
 add_files -norecurse -fileset $obj $files
 
@@ -224,7 +224,7 @@ if {[string equal [get_filesets -quiet sim_1] ""]} {
 set obj [get_filesets sim_1]
 set files [list \
  [file normalize "${origin_dir}/sourceFiles/Memory.v"] \
- [file normalize "${origin_dir}/sourceFiles/SectorProcessor_test_mod.v"] \
+ [file normalize "${origin_dir}/sourceFiles/SectorProcessor_test.v"] \
  [file normalize "${origin_dir}/emData/CandidateMatches_CM_L3PHIC17_04.dat"] \
  [file normalize "${origin_dir}/emData/AllProj_AP_L3PHIC_04.dat"] \
  [file normalize "${origin_dir}/emData/AllStubs_AS_L3PHICn4_04.dat"] \
