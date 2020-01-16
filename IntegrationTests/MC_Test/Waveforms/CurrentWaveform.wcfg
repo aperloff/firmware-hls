@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="1079722811fs"></ZoomStartTime>
-      <ZoomEndTime time="1171385949fs"></ZoomEndTime>
-      <Cursor1Time time="1095000000fs"></Cursor1Time>
+      <ZoomStartTime time="1017500000fs"></ZoomStartTime>
+      <ZoomEndTime time="1748000001fs"></ZoomEndTime>
+      <Cursor1Time time="1345000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="351"></NameColumnWidth>
-      <ValueColumnWidth column_width="85"></ValueColumnWidth>
+      <NameColumnWidth column_width="302"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="29" />
+   <WVObjectSize size="174" />
    <wvobject type="logic" fp_name="/SectorProcessor_test/clk">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -40,124 +40,686 @@
       <obj_property name="ElementShortName">bx_out_MatchCalculator[2:0]</obj_property>
       <obj_property name="ObjectShortName">bx_out_MatchCalculator[2:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/MCALC_L1L2XXH_L3PHIC17_dataarray_data_V_dout">
-      <obj_property name="ElementShortName">MCALC_L1L2XXH_L3PHIC17_dataarray_data_V_dout[13:0]</obj_property>
-      <obj_property name="ObjectShortName">MCALC_L1L2XXH_L3PHIC17_dataarray_data_V_dout[13:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC17_nentries_0_V_din">
+      <obj_property name="ElementShortName">CM_L3PHIC17_nentries_0_V_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC17_nentries_0_V_din[7:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/MCALC_L1L2XXH_L3PHIC17/BRAM">
+   <wvobject type="logic" fp_name="/SectorProcessor_test/CM_L3PHIC17_dataarray_data_V_enb">
+      <obj_property name="ElementShortName">CM_L3PHIC17_dataarray_data_V_enb</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC17_dataarray_data_V_enb</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC17_dataarray_data_V_readaddr">
+      <obj_property name="ElementShortName">CM_L3PHIC17_dataarray_data_V_readaddr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC17_dataarray_data_V_readaddr[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC17/BRAM">
       <obj_property name="ElementShortName">BRAM[255:0][13:0]</obj_property>
       <obj_property name="ObjectShortName">BRAM[255:0][13:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/SectorProcessor_inst/MC_L3PHIC/inst/grp_MatchCalculator_fu_248/cm_L3_next_data_V_reg_8933">
+      <obj_property name="ElementShortName">cm_L3_next_data_V_reg_8933[13:0]</obj_property>
+      <obj_property name="ObjectShortName">cm_L3_next_data_V_reg_8933[13:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/MCALC_L1L2XXH_L3PHIC18_dataarray_data_V_dout">
-      <obj_property name="ElementShortName">MCALC_L1L2XXH_L3PHIC18_dataarray_data_V_dout[13:0]</obj_property>
-      <obj_property name="ObjectShortName">MCALC_L1L2XXH_L3PHIC18_dataarray_data_V_dout[13:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/MCALC_L1L2XXH_L3PHIC19_dataarray_data_V_dout">
-      <obj_property name="ElementShortName">MCALC_L1L2XXH_L3PHIC19_dataarray_data_V_dout[13:0]</obj_property>
-      <obj_property name="ObjectShortName">MCALC_L1L2XXH_L3PHIC19_dataarray_data_V_dout[13:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/MCALC_L1L2XXH_L3PHIC20_dataarray_data_V_dout">
-      <obj_property name="ElementShortName">MCALC_L1L2XXH_L3PHIC20_dataarray_data_V_dout[13:0]</obj_property>
-      <obj_property name="ObjectShortName">MCALC_L1L2XXH_L3PHIC20_dataarray_data_V_dout[13:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/MCALC_L1L2XXH_L3PHIC21_dataarray_data_V_dout">
-      <obj_property name="ElementShortName">MCALC_L1L2XXH_L3PHIC21_dataarray_data_V_dout[13:0]</obj_property>
-      <obj_property name="ObjectShortName">MCALC_L1L2XXH_L3PHIC21_dataarray_data_V_dout[13:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/MCALC_L1L2XXH_L3PHIC22_dataarray_data_V_dout">
-      <obj_property name="ElementShortName">MCALC_L1L2XXH_L3PHIC22_dataarray_data_V_dout[13:0]</obj_property>
-      <obj_property name="ObjectShortName">MCALC_L1L2XXH_L3PHIC22_dataarray_data_V_dout[13:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/MCALC_L1L2XXH_L3PHIC23_dataarray_data_V_dout">
-      <obj_property name="ElementShortName">MCALC_L1L2XXH_L3PHIC23_dataarray_data_V_dout[13:0]</obj_property>
-      <obj_property name="ObjectShortName">MCALC_L1L2XXH_L3PHIC23_dataarray_data_V_dout[13:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/allproj_dataarray_data_V_dout">
-      <obj_property name="ElementShortName">allproj_dataarray_data_V_dout[59:0]</obj_property>
-      <obj_property name="ObjectShortName">allproj_dataarray_data_V_dout[59:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/allproj_L3PHIC/BRAM">
-      <obj_property name="ElementShortName">BRAM[255:0][59:0]</obj_property>
-      <obj_property name="ObjectShortName">BRAM[255:0][59:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/allstub_dataarray_data_V_dout">
-      <obj_property name="ElementShortName">allstub_dataarray_data_V_dout[35:0]</obj_property>
-      <obj_property name="ObjectShortName">allstub_dataarray_data_V_dout[35:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/allstub_L3PHIC/BRAM">
-      <obj_property name="ElementShortName">BRAM[255:0][35:0]</obj_property>
-      <obj_property name="ObjectShortName">BRAM[255:0][35:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/FMCALC_L1L2XXH_L3PHIC_dataarray_data_V_din">
-      <obj_property name="ElementShortName">FMCALC_L1L2XXH_L3PHIC_dataarray_data_V_din[44:0]</obj_property>
-      <obj_property name="ObjectShortName">FMCALC_L1L2XXH_L3PHIC_dataarray_data_V_din[44:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/FMCALC_L1L2XXH_L3PHIC/BRAM">
-      <obj_property name="ElementShortName">BRAM[255:0][44:0]</obj_property>
-      <obj_property name="ObjectShortName">BRAM[255:0][44:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/FMCALC_L3L4XXH_L1PHIC_dataarray_data_V_din">
-      <obj_property name="ElementShortName">FMCALC_L3L4XXH_L1PHIC_dataarray_data_V_din[44:0]</obj_property>
-      <obj_property name="ObjectShortName">FMCALC_L3L4XXH_L1PHIC_dataarray_data_V_din[44:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/FMCALC_L5L6XXH_L3PHIC_dataarray_data_V_din">
-      <obj_property name="ElementShortName">FMCALC_L5L6XXH_L3PHIC_dataarray_data_V_din[44:0]</obj_property>
-      <obj_property name="ObjectShortName">FMCALC_L5L6XXH_L3PHIC_dataarray_data_V_din[44:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/FMCALC_D1D2XXH_L1PHIC_dataarray_data_V_din">
-      <obj_property name="ElementShortName">FMCALC_D1D2XXH_L1PHIC_dataarray_data_V_din[44:0]</obj_property>
-      <obj_property name="ObjectShortName">FMCALC_D1D2XXH_L1PHIC_dataarray_data_V_din[44:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/FMCALC_D3D4XXH_L1PHIC_dataarray_data_V_din">
-      <obj_property name="ElementShortName">FMCALC_D3D4XXH_L1PHIC_dataarray_data_V_din[44:0]</obj_property>
-      <obj_property name="ObjectShortName">FMCALC_D3D4XXH_L1PHIC_dataarray_data_V_din[44:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/FMCALC_D5D6XXH_L1PHIC_dataarray_data_V_din">
-      <obj_property name="ElementShortName">FMCALC_D5D6XXH_L1PHIC_dataarray_data_V_din[44:0]</obj_property>
-      <obj_property name="ObjectShortName">FMCALC_D5D6XXH_L1PHIC_dataarray_data_V_din[44:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/FMCALC_L2D1XXH_L1PHIC_dataarray_data_V_din">
-      <obj_property name="ElementShortName">FMCALC_L2D1XXH_L1PHIC_dataarray_data_V_din[44:0]</obj_property>
-      <obj_property name="ObjectShortName">FMCALC_L2D1XXH_L1PHIC_dataarray_data_V_din[44:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/SectorProcessor_inst/MC/inst/grp_MatchCalculator_fu_248/projid_V_reg_8963">
-      <obj_property name="ElementShortName">projid_V_reg_8963[6:0]</obj_property>
-      <obj_property name="ObjectShortName">projid_V_reg_8963[6:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/SectorProcessor_inst/MC/inst/grp_MatchCalculator_fu_248/stubid_V_reg_8970">
+   <wvobject type="array" fp_name="/SectorProcessor_test/SectorProcessor_inst/MC_L3PHIC/inst/grp_MatchCalculator_fu_248/stubid_V_reg_8970">
       <obj_property name="ElementShortName">stubid_V_reg_8970[6:0]</obj_property>
       <obj_property name="ObjectShortName">stubid_V_reg_8970[6:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/SectorProcessor_inst/MC/inst/grp_MatchCalculator_fu_248/bestmatch_data_V_fu_8011_p3">
-      <obj_property name="ElementShortName">bestmatch_data_V_fu_8011_p3[44:0]</obj_property>
-      <obj_property name="ObjectShortName">bestmatch_data_V_fu_8011_p3[44:0]</obj_property>
+   <wvobject type="array" fp_name="/SectorProcessor_test/SectorProcessor_inst/MC_L3PHIC/inst/grp_MatchCalculator_fu_248/projid_V_reg_8963">
+      <obj_property name="ElementShortName">projid_V_reg_8963[6:0]</obj_property>
+      <obj_property name="ObjectShortName">projid_V_reg_8963[6:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/SectorProcessor_test/SectorProcessor_inst/MC/inst/grp_MatchCalculator_fu_248/bestmatch_next_data_s_fu_7928_p6">
-      <obj_property name="ElementShortName">bestmatch_next_data_s_fu_7928_p6[44:0]</obj_property>
-      <obj_property name="ObjectShortName">bestmatch_next_data_s_fu_7928_p6[44:0]</obj_property>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC17_dataarray_data_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC17_dataarray_data_V_dout[13:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC17_dataarray_data_V_dout[13:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC17_nentries_0_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC17_nentries_0_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC17_nentries_0_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC17_nentries_1_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC17_nentries_1_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC17_nentries_1_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC17_nentreg_0">
+      <obj_property name="ElementShortName">CM_L3PHIC17_nentreg_0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC17_nentreg_0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC17_nentreg_1">
+      <obj_property name="ElementShortName">CM_L3PHIC17_nentreg_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC17_nentreg_1[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/CM_L3PHIC18_dataarray_data_V_enb">
+      <obj_property name="ElementShortName">CM_L3PHIC18_dataarray_data_V_enb</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC18_dataarray_data_V_enb</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC18_dataarray_data_V_readaddr">
+      <obj_property name="ElementShortName">CM_L3PHIC18_dataarray_data_V_readaddr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC18_dataarray_data_V_readaddr[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC18_dataarray_data_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC18_dataarray_data_V_dout[13:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC18_dataarray_data_V_dout[13:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC18_nentries_0_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC18_nentries_0_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC18_nentries_0_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC18_nentries_1_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC18_nentries_1_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC18_nentries_1_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC18_nentreg_0">
+      <obj_property name="ElementShortName">CM_L3PHIC18_nentreg_0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC18_nentreg_0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC18_nentreg_1">
+      <obj_property name="ElementShortName">CM_L3PHIC18_nentreg_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC18_nentreg_1[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/CM_L3PHIC20_dataarray_data_V_enb">
+      <obj_property name="ElementShortName">CM_L3PHIC20_dataarray_data_V_enb</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC20_dataarray_data_V_enb</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC20_dataarray_data_V_readaddr">
+      <obj_property name="ElementShortName">CM_L3PHIC20_dataarray_data_V_readaddr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC20_dataarray_data_V_readaddr[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC20_dataarray_data_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC20_dataarray_data_V_dout[13:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC20_dataarray_data_V_dout[13:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC20_nentries_0_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC20_nentries_0_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC20_nentries_0_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC20_nentries_1_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC20_nentries_1_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC20_nentries_1_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC20_nentreg_0">
+      <obj_property name="ElementShortName">CM_L3PHIC20_nentreg_0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC20_nentreg_0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC20_nentreg_1">
+      <obj_property name="ElementShortName">CM_L3PHIC20_nentreg_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC20_nentreg_1[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/CM_L3PHIC21_dataarray_data_V_enb">
+      <obj_property name="ElementShortName">CM_L3PHIC21_dataarray_data_V_enb</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC21_dataarray_data_V_enb</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC21_dataarray_data_V_readaddr">
+      <obj_property name="ElementShortName">CM_L3PHIC21_dataarray_data_V_readaddr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC21_dataarray_data_V_readaddr[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC21_dataarray_data_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC21_dataarray_data_V_dout[13:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC21_dataarray_data_V_dout[13:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC21_nentries_0_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC21_nentries_0_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC21_nentries_0_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC21_nentries_1_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC21_nentries_1_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC21_nentries_1_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC21_nentreg_0">
+      <obj_property name="ElementShortName">CM_L3PHIC21_nentreg_0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC21_nentreg_0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC21_nentreg_1">
+      <obj_property name="ElementShortName">CM_L3PHIC21_nentreg_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC21_nentreg_1[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/AS_L3PHICn4_dataarray_data_V_wea">
+      <obj_property name="ElementShortName">AS_L3PHICn4_dataarray_data_V_wea</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_dataarray_data_V_wea</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_dataarray_data_V_writeaddr">
+      <obj_property name="ElementShortName">AS_L3PHICn4_dataarray_data_V_writeaddr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_dataarray_data_V_writeaddr[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_dataarray_data_V_din">
+      <obj_property name="ElementShortName">AS_L3PHICn4_dataarray_data_V_din[35:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_dataarray_data_V_din[35:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_0_V_we">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_0_V_we</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_0_V_we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_0_V_din">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_0_V_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_0_V_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_1_V_we">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_1_V_we</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_1_V_we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_1_V_din">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_1_V_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_1_V_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_2_V_we">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_2_V_we</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_2_V_we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_2_V_din">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_2_V_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_2_V_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_3_V_we">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_3_V_we</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_3_V_we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_3_V_din">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_3_V_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_3_V_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_4_V_we">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_4_V_we</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_4_V_we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_4_V_din">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_4_V_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_4_V_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_5_V_we">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_5_V_we</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_5_V_we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_5_V_din">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_5_V_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_5_V_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_6_V_we">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_6_V_we</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_6_V_we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_6_V_din">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_6_V_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_6_V_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_7_V_we">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_7_V_we</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_7_V_we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_7_V_din">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_7_V_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_7_V_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/AS_L3PHICn4_dataarray_data_V_enb">
+      <obj_property name="ElementShortName">AS_L3PHICn4_dataarray_data_V_enb</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_dataarray_data_V_enb</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_dataarray_data_V_readaddr">
+      <obj_property name="ElementShortName">AS_L3PHICn4_dataarray_data_V_readaddr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_dataarray_data_V_readaddr[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_dataarray_data_V_dout">
+      <obj_property name="ElementShortName">AS_L3PHICn4_dataarray_data_V_dout[35:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_dataarray_data_V_dout[35:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_0_V_dout">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_0_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_0_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_1_V_dout">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_1_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_1_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_2_V_dout">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_2_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_2_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_3_V_dout">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_3_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_3_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_4_V_dout">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_4_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_4_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_5_V_dout">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_5_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_5_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_6_V_dout">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_6_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_6_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentries_7_V_dout">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentries_7_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentries_7_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentreg_0">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentreg_0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentreg_0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentreg_1">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentreg_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentreg_1[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentreg_2">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentreg_2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentreg_2[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentreg_3">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentreg_3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentreg_3[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentreg_4">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentreg_4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentreg_4[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentreg_5">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentreg_5[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentreg_5[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentreg_6">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentreg_6[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentreg_6[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AS_L3PHICn4_nentreg_7">
+      <obj_property name="ElementShortName">AS_L3PHICn4_nentreg_7[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AS_L3PHICn4_nentreg_7[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/CM_L3PHIC22_dataarray_data_V_enb">
+      <obj_property name="ElementShortName">CM_L3PHIC22_dataarray_data_V_enb</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC22_dataarray_data_V_enb</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC22_dataarray_data_V_readaddr">
+      <obj_property name="ElementShortName">CM_L3PHIC22_dataarray_data_V_readaddr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC22_dataarray_data_V_readaddr[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC22_dataarray_data_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC22_dataarray_data_V_dout[13:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC22_dataarray_data_V_dout[13:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC22_nentries_0_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC22_nentries_0_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC22_nentries_0_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC22_nentries_1_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC22_nentries_1_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC22_nentries_1_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC22_nentreg_0">
+      <obj_property name="ElementShortName">CM_L3PHIC22_nentreg_0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC22_nentreg_0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC22_nentreg_1">
+      <obj_property name="ElementShortName">CM_L3PHIC22_nentreg_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC22_nentreg_1[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/CM_L3PHIC23_dataarray_data_V_enb">
+      <obj_property name="ElementShortName">CM_L3PHIC23_dataarray_data_V_enb</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC23_dataarray_data_V_enb</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC23_dataarray_data_V_readaddr">
+      <obj_property name="ElementShortName">CM_L3PHIC23_dataarray_data_V_readaddr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC23_dataarray_data_V_readaddr[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC23_dataarray_data_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC23_dataarray_data_V_dout[13:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC23_dataarray_data_V_dout[13:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC23_nentries_0_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC23_nentries_0_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC23_nentries_0_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC23_nentries_1_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC23_nentries_1_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC23_nentries_1_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC23_nentreg_0">
+      <obj_property name="ElementShortName">CM_L3PHIC23_nentreg_0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC23_nentreg_0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC23_nentreg_1">
+      <obj_property name="ElementShortName">CM_L3PHIC23_nentreg_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC23_nentreg_1[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/CM_L3PHIC24_dataarray_data_V_enb">
+      <obj_property name="ElementShortName">CM_L3PHIC24_dataarray_data_V_enb</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC24_dataarray_data_V_enb</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC24_dataarray_data_V_readaddr">
+      <obj_property name="ElementShortName">CM_L3PHIC24_dataarray_data_V_readaddr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC24_dataarray_data_V_readaddr[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC24_dataarray_data_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC24_dataarray_data_V_dout[13:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC24_dataarray_data_V_dout[13:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC24_nentries_0_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC24_nentries_0_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC24_nentries_0_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC24_nentries_1_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC24_nentries_1_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC24_nentries_1_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC24_nentreg_0">
+      <obj_property name="ElementShortName">CM_L3PHIC24_nentreg_0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC24_nentreg_0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC24_nentreg_1">
+      <obj_property name="ElementShortName">CM_L3PHIC24_nentreg_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC24_nentreg_1[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/AP_L3PHIC_dataarray_data_V_wea">
+      <obj_property name="ElementShortName">AP_L3PHIC_dataarray_data_V_wea</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_dataarray_data_V_wea</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_dataarray_data_V_writeaddr">
+      <obj_property name="ElementShortName">AP_L3PHIC_dataarray_data_V_writeaddr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_dataarray_data_V_writeaddr[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_dataarray_data_V_din">
+      <obj_property name="ElementShortName">AP_L3PHIC_dataarray_data_V_din[59:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_dataarray_data_V_din[59:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_0_V_we">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_0_V_we</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_0_V_we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_0_V_din">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_0_V_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_0_V_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_1_V_we">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_1_V_we</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_1_V_we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_1_V_din">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_1_V_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_1_V_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_2_V_we">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_2_V_we</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_2_V_we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_2_V_din">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_2_V_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_2_V_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_3_V_we">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_3_V_we</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_3_V_we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_3_V_din">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_3_V_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_3_V_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_4_V_we">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_4_V_we</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_4_V_we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_4_V_din">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_4_V_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_4_V_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_5_V_we">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_5_V_we</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_5_V_we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_5_V_din">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_5_V_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_5_V_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_6_V_we">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_6_V_we</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_6_V_we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_6_V_din">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_6_V_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_6_V_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_7_V_we">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_7_V_we</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_7_V_we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_7_V_din">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_7_V_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_7_V_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/AP_L3PHIC_dataarray_data_V_enb">
+      <obj_property name="ElementShortName">AP_L3PHIC_dataarray_data_V_enb</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_dataarray_data_V_enb</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_dataarray_data_V_readaddr">
+      <obj_property name="ElementShortName">AP_L3PHIC_dataarray_data_V_readaddr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_dataarray_data_V_readaddr[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_dataarray_data_V_dout">
+      <obj_property name="ElementShortName">AP_L3PHIC_dataarray_data_V_dout[59:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_dataarray_data_V_dout[59:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_0_V_dout">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_0_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_0_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_1_V_dout">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_1_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_1_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_2_V_dout">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_2_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_2_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_3_V_dout">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_3_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_3_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_4_V_dout">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_4_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_4_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_5_V_dout">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_5_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_5_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_6_V_dout">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_6_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_6_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentries_7_V_dout">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentries_7_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentries_7_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentreg_0">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentreg_0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentreg_0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentreg_1">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentreg_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentreg_1[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentreg_2">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentreg_2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentreg_2[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentreg_3">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentreg_3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentreg_3[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentreg_4">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentreg_4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentreg_4[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentreg_5">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentreg_5[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentreg_5[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentreg_6">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentreg_6[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentreg_6[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/AP_L3PHIC_nentreg_7">
+      <obj_property name="ElementShortName">AP_L3PHIC_nentreg_7[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AP_L3PHIC_nentreg_7[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/CM_L3PHIC19_dataarray_data_V_wea">
+      <obj_property name="ElementShortName">CM_L3PHIC19_dataarray_data_V_wea</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC19_dataarray_data_V_wea</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC19_dataarray_data_V_writeaddr">
+      <obj_property name="ElementShortName">CM_L3PHIC19_dataarray_data_V_writeaddr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC19_dataarray_data_V_writeaddr[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC19_dataarray_data_V_din">
+      <obj_property name="ElementShortName">CM_L3PHIC19_dataarray_data_V_din[13:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC19_dataarray_data_V_din[13:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/CM_L3PHIC19_nentries_0_V_we">
+      <obj_property name="ElementShortName">CM_L3PHIC19_nentries_0_V_we</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC19_nentries_0_V_we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC19_nentries_0_V_din">
+      <obj_property name="ElementShortName">CM_L3PHIC19_nentries_0_V_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC19_nentries_0_V_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/CM_L3PHIC19_nentries_1_V_we">
+      <obj_property name="ElementShortName">CM_L3PHIC19_nentries_1_V_we</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC19_nentries_1_V_we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC19_nentries_1_V_din">
+      <obj_property name="ElementShortName">CM_L3PHIC19_nentries_1_V_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC19_nentries_1_V_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/CM_L3PHIC19_dataarray_data_V_enb">
+      <obj_property name="ElementShortName">CM_L3PHIC19_dataarray_data_V_enb</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC19_dataarray_data_V_enb</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC19_dataarray_data_V_readaddr">
+      <obj_property name="ElementShortName">CM_L3PHIC19_dataarray_data_V_readaddr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC19_dataarray_data_V_readaddr[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC19_dataarray_data_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC19_dataarray_data_V_dout[13:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC19_dataarray_data_V_dout[13:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC19_nentries_0_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC19_nentries_0_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC19_nentries_0_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC19_nentries_1_V_dout">
+      <obj_property name="ElementShortName">CM_L3PHIC19_nentries_1_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC19_nentries_1_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC19_nentreg_0">
+      <obj_property name="ElementShortName">CM_L3PHIC19_nentreg_0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC19_nentreg_0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/CM_L3PHIC19_nentreg_1">
+      <obj_property name="ElementShortName">CM_L3PHIC19_nentreg_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CM_L3PHIC19_nentreg_1[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/FM_L1L2XX_L3PHIC_dataarray_data_V_wea">
+      <obj_property name="ElementShortName">FM_L1L2XX_L3PHIC_dataarray_data_V_wea</obj_property>
+      <obj_property name="ObjectShortName">FM_L1L2XX_L3PHIC_dataarray_data_V_wea</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FM_L1L2XX_L3PHIC_dataarray_data_V_writeaddr">
+      <obj_property name="ElementShortName">FM_L1L2XX_L3PHIC_dataarray_data_V_writeaddr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">FM_L1L2XX_L3PHIC_dataarray_data_V_writeaddr[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FM_L1L2XX_L3PHIC_dataarray_data_V_din">
+      <obj_property name="ElementShortName">FM_L1L2XX_L3PHIC_dataarray_data_V_din[44:0]</obj_property>
+      <obj_property name="ObjectShortName">FM_L1L2XX_L3PHIC_dataarray_data_V_din[44:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/FM_L1L2XX_L3PHIC_nentries_0_V_we">
+      <obj_property name="ElementShortName">FM_L1L2XX_L3PHIC_nentries_0_V_we</obj_property>
+      <obj_property name="ObjectShortName">FM_L1L2XX_L3PHIC_nentries_0_V_we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FM_L1L2XX_L3PHIC_nentries_0_V_din">
+      <obj_property name="ElementShortName">FM_L1L2XX_L3PHIC_nentries_0_V_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">FM_L1L2XX_L3PHIC_nentries_0_V_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/FM_L1L2XX_L3PHIC_nentries_1_V_we">
+      <obj_property name="ElementShortName">FM_L1L2XX_L3PHIC_nentries_1_V_we</obj_property>
+      <obj_property name="ObjectShortName">FM_L1L2XX_L3PHIC_nentries_1_V_we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FM_L1L2XX_L3PHIC_nentries_1_V_din">
+      <obj_property name="ElementShortName">FM_L1L2XX_L3PHIC_nentries_1_V_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">FM_L1L2XX_L3PHIC_nentries_1_V_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FM_L1L2XX_L3PHIC/BRAM">
+      <obj_property name="ElementShortName">BRAM[255:0][44:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM[255:0][44:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/FM_L1L2XX_L3PHIC_dataarray_data_V_enb">
+      <obj_property name="ElementShortName">FM_L1L2XX_L3PHIC_dataarray_data_V_enb</obj_property>
+      <obj_property name="ObjectShortName">FM_L1L2XX_L3PHIC_dataarray_data_V_enb</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FM_L1L2XX_L3PHIC_dataarray_data_V_readaddr">
+      <obj_property name="ElementShortName">FM_L1L2XX_L3PHIC_dataarray_data_V_readaddr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">FM_L1L2XX_L3PHIC_dataarray_data_V_readaddr[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FM_L1L2XX_L3PHIC_dataarray_data_V_dout">
+      <obj_property name="ElementShortName">FM_L1L2XX_L3PHIC_dataarray_data_V_dout[44:0]</obj_property>
+      <obj_property name="ObjectShortName">FM_L1L2XX_L3PHIC_dataarray_data_V_dout[44:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FM_L1L2XX_L3PHIC_nentries_0_V_dout">
+      <obj_property name="ElementShortName">FM_L1L2XX_L3PHIC_nentries_0_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">FM_L1L2XX_L3PHIC_nentries_0_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FM_L1L2XX_L3PHIC_nentries_1_V_dout">
+      <obj_property name="ElementShortName">FM_L1L2XX_L3PHIC_nentries_1_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">FM_L1L2XX_L3PHIC_nentries_1_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/FM_L5L6XX_L3PHIC_dataarray_data_V_wea">
+      <obj_property name="ElementShortName">FM_L5L6XX_L3PHIC_dataarray_data_V_wea</obj_property>
+      <obj_property name="ObjectShortName">FM_L5L6XX_L3PHIC_dataarray_data_V_wea</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FM_L5L6XX_L3PHIC_dataarray_data_V_writeaddr">
+      <obj_property name="ElementShortName">FM_L5L6XX_L3PHIC_dataarray_data_V_writeaddr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">FM_L5L6XX_L3PHIC_dataarray_data_V_writeaddr[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FM_L5L6XX_L3PHIC_dataarray_data_V_din">
+      <obj_property name="ElementShortName">FM_L5L6XX_L3PHIC_dataarray_data_V_din[44:0]</obj_property>
+      <obj_property name="ObjectShortName">FM_L5L6XX_L3PHIC_dataarray_data_V_din[44:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/FM_L5L6XX_L3PHIC_nentries_0_V_we">
+      <obj_property name="ElementShortName">FM_L5L6XX_L3PHIC_nentries_0_V_we</obj_property>
+      <obj_property name="ObjectShortName">FM_L5L6XX_L3PHIC_nentries_0_V_we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FM_L5L6XX_L3PHIC_nentries_0_V_din">
+      <obj_property name="ElementShortName">FM_L5L6XX_L3PHIC_nentries_0_V_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">FM_L5L6XX_L3PHIC_nentries_0_V_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/FM_L5L6XX_L3PHIC_nentries_1_V_we">
+      <obj_property name="ElementShortName">FM_L5L6XX_L3PHIC_nentries_1_V_we</obj_property>
+      <obj_property name="ObjectShortName">FM_L5L6XX_L3PHIC_nentries_1_V_we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FM_L5L6XX_L3PHIC_nentries_1_V_din">
+      <obj_property name="ElementShortName">FM_L5L6XX_L3PHIC_nentries_1_V_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">FM_L5L6XX_L3PHIC_nentries_1_V_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SectorProcessor_test/FM_L5L6XX_L3PHIC_dataarray_data_V_enb">
+      <obj_property name="ElementShortName">FM_L5L6XX_L3PHIC_dataarray_data_V_enb</obj_property>
+      <obj_property name="ObjectShortName">FM_L5L6XX_L3PHIC_dataarray_data_V_enb</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FM_L5L6XX_L3PHIC_dataarray_data_V_readaddr">
+      <obj_property name="ElementShortName">FM_L5L6XX_L3PHIC_dataarray_data_V_readaddr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">FM_L5L6XX_L3PHIC_dataarray_data_V_readaddr[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FM_L5L6XX_L3PHIC_dataarray_data_V_dout">
+      <obj_property name="ElementShortName">FM_L5L6XX_L3PHIC_dataarray_data_V_dout[44:0]</obj_property>
+      <obj_property name="ObjectShortName">FM_L5L6XX_L3PHIC_dataarray_data_V_dout[44:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FM_L5L6XX_L3PHIC_nentries_0_V_dout">
+      <obj_property name="ElementShortName">FM_L5L6XX_L3PHIC_nentries_0_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">FM_L5L6XX_L3PHIC_nentries_0_V_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SectorProcessor_test/FM_L5L6XX_L3PHIC_nentries_1_V_dout">
+      <obj_property name="ElementShortName">FM_L5L6XX_L3PHIC_nentries_1_V_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">FM_L5L6XX_L3PHIC_nentries_1_V_dout[7:0]</obj_property>
    </wvobject>
 </wave_config>
